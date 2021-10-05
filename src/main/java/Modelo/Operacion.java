@@ -14,13 +14,13 @@ public class Operacion {
         this.c = c;
     }
 
-    public void cuadratica1() {
+    public double cuadratica1() {
 
         double discriminante = b * b - 4 * a * c;
 
         if (discriminante < 0) {
 
-            System.out.println("Que we vasayorrar");
+            x1 = 0;
 
         } else {
 
@@ -28,16 +28,16 @@ public class Operacion {
 
             x1 = (-b + raiz) / (2 * a);
         }
-
+        return  x1;
     }
 
-    public void cuadratica2() {
+    public double cuadratica2() {
 
         double discriminante = b * b - 4 * a * c;
 
         if (discriminante < 0) {
 
-            System.out.println("Que we vasayorrar");
+            x2 = 0;
 
         } else {
 
@@ -45,7 +45,8 @@ public class Operacion {
 
             x2 = (-b - raiz) / (2 * a);
         }
-
+        
+        return  x2;
     }
 
     public double getX1() {
