@@ -28,6 +28,7 @@ public class Operacion {
 
             x1 = (-b + raiz) / (2 * a);
         }
+        
         return  x1;
     }
 

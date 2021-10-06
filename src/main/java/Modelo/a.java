@@ -6,8 +6,8 @@ public class a {
 
     public static void main(String[] args) {
 
-       Scanner s = new Scanner(System.in); 
-        
+        Scanner s = new Scanner(System.in);
+
         double x1;
         double x2;
         
@@ -48,7 +48,7 @@ public class a {
             System.out.println("Cuadratica negativa: " + x2);
 
         }
+       
 
-        
     }
 }
