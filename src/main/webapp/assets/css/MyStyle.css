@@ -2,11 +2,11 @@
     --color-grey-dark: #082032;
     --color-yellow-chicken: #F0A500;
     --color-white: #fff;
-    --color-grey-light:#083D56;
-    
+    --color-grey-light: #083D56;
     --font-family-default: 'Rhodium Libre', serif;
     --font-size-title: 65px;
     --font-size-link: 35px;
+    --image-taco: url(../img/taco-emote.png);
 }
 
 * {
@@ -30,6 +30,9 @@
     color: var(--color-white);
     font-size: var(--font-size-title);
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero--yellow {
@@ -37,7 +40,8 @@
 }
 
 .taco {
-    font-size: 90px;
+    width: 100px;
+    height: 100px;
 }
 
 .container {
@@ -71,13 +75,13 @@
 }
 
 /*Form style*/
+
 /*Form container*/
-.primary--ctn{
 
+.primary--ctn {
     display: flex;
-
-
 }
+
 /*form items*/
 
 .form-page .hero__text {
@@ -95,7 +99,7 @@
     flex-direction: column;
     width: 50%;
     padding: 120px;
-    flex: .3 1;
+    flex: .2 1;
 }
 
 .nav__option {
@@ -105,13 +109,55 @@
     height: 30px;
     margin: 10px;
 }
+
 /*form*/
-.main__ctn{
-    flex: .7;
+
+.main__ctn {
+    flex: .8;
     background-color: var(--color-grey-light);
     padding: 100px;
 }
 
 /*form propierties*/
 
-.form__input {}
+/*Main explanation about cuadratic*/
+
+.main__ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__h2 {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.main__p {
+    color: var(--color-white);
+}
+
+.p--yellow {
+    color: var(--color-yellow-chicken);
+}
+
+/*Form container*/
+.form__inputs{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.form__input {
+    display: inline-flex;
+    color: var(--color-white);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0E5171;
+    text-align: center;
+}
+
+.form__input::placeholder{
+    color: var(--color-white);
+}
