@@ -1,6 +1,8 @@
 :root {
     --color-grey-dark: #082032;
     --color-yellow-chicken: #F0A500;
+    --color-yellow-dark-hover:#d18f00;
+    --color-yellow-light: #FCE38A;
     --color-white: #fff;
     --color-grey-light: #083D56;
     --font-family-default: 'Rhodium Libre', serif;
@@ -12,6 +14,8 @@
 * {
     font-family: var(--font-family-default);
 }
+
+/* Main page background for index.html*/
 
 .main-page .background {
     display: flex;
@@ -94,31 +98,62 @@
     width: 100vw;
 }
 
+/* aside nav bar properties*/
+
 .nav__bar {
-    display: inline-flex;
+    padding: 0px;
+    display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 120px;
     flex: .2 1;
+    padding: 20px;
 }
 
 .nav__option {
-    display: inline-block;
-    background-color: var(--color-yellow-chicken);
-    width: 50px;
-    height: 30px;
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.option__link {
+    display: flex;
+    flex-basis: 30%;
+    width: 60px;
+    height: 60px;
+    margin: 10px 20px;
+    background-color: var(--color-grey-light);
+    justify-content: center;
+    align-items: center;
+}
+
+.link__text {
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 /*form*/
 
+.form-page .taco {
+    width: 45px;
+    height: auto;
+}
+
 .main__ctn {
     flex: .8;
     background-color: var(--color-grey-light);
-    padding: 100px;
 }
 
 /*form propierties*/
+
+.main__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Main explanation about cuadratic*/
 
@@ -127,15 +162,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px;
 }
 
 .main__h2 {
     color: var(--color-white);
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .main__p {
     color: var(--color-white);
+    font-size: 25px;
+    text-align: center;
 }
 
 .p--yellow {
@@ -143,21 +181,86 @@
 }
 
 /*Form container*/
-.form__inputs{
-    display: inline-flex;
+
+.form__inputs {
+    display: flex;
     flex-direction: row;
 }
 
 .form__input {
-    display: inline-flex;
+    margin: 10px;
+    width: 40px;
+    height: auto;
     color: var(--color-white);
-    font-size: 20px;
     border: none;
-    border-radius: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 5px;
     background-color: #0E5171;
+    text-align: center;
+    width: 90px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form__input::placeholder {
+    color: var(--color-white);
+}
+
+.input__paragram {
+    font-size: 30px;
+    color: var(--color-white);
+    margin:auto 10px;
+}
+
+/*form button properties*/
+
+.form__submit {
+    padding: 7px 20px;
+    margin-top: 10px;
+    background-color: var(--color-yellow-chicken);
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit--white {
+    color: var(--color-grey-light);
+}
+
+.form__submit:hover{
+
+    background-color: var(--color-yellow-dark-hover);
+    color:#073246;
+}
+
+
+
+/* Solution of the ecuation*/
+
+.main__solution {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.solution__p {
+    flex: 1 1 50%;
     text-align: center;
 }
 
-.form__input::placeholder{
+.p--white {
     color: var(--color-white);
+}
+
+.main__graph {
+    
 }

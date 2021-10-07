@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora | Ecuacion cuadratica</title>
+    <title>Calculadora | Ecuación cuadrática</title>
     <!--Google fonts free to play-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,58 +14,76 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--- Mi css -->
     <link rel="stylesheet" href="assets/css/MyStyle.css">
+    <link rel="shortcut icon" href="assets/img/taco-emote.png" type="image/x-icon">
 </head>
 
 <body class="form-page">
+
     <div class="primary--ctn background background--grey-dark">
 
-        <nav class="nav__bar">
+        <div class="nav__bar">
+
             <a class="nav__link link--text-dec" href="index.html">
-                <h1 class="hero__text">Taco<span class="hero--yellow">Calculator</span><span class="taco-small"></span>
+                <h1 class="hero__text">Taco<span class="hero--yellow">Calculator</span><img class="taco"
+                        src="assets/img/taco-emote.png" alt="taco emote windows"></span>
                 </h1>
             </a>
 
-            <div class="nav__back"><a class="link--text-dec" href="index.html">pa volver por mientras</a></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
-            <div class="nav__option"></div>
+            <div class="nav__option">
 
-        </nav>
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+                <div class="option__link"><a class="link__text" href="">awuebo</a></div>
+            </div>
+
+        </div>
+
+
 
         <div class="main__ctn">
             <div class="main__content">
-                <h2 class="main__h2">Ecuacion cuadratica</h2>
-                <p class="main__p"><span class="p--yellow">0</span>= ax<sup>2</sup>+bx+c</p>
+                <h2 class="main__h2">Calculadora cuadrática</h2>
+                <p class="main__p"><span class="p--yellow">0</span> = ax<sup>2</sup> + bx + c</p>
             </div>
 
             <div class="main__ctn-form">
                 <form class="main__form" action="resultado.jsp" method="POST">
                     <div class="form__inputs">
                         <label for="a_field"></label>
-                        <input class="form__input input--prp" type="text" name="a_field" id="a_field" placeholder="a"
+                        <input class="form__input" type="number" step="any" name="a_field" id="a_field" placeholder="a"
                             required>
-                        <p class="p">x<sup>2</sup> + </p>
+                        <p class="input__paragram"> x<sup>2</sup> + </p>
                         <label for="b_field"></label>
-                        <input class="form__input input--prp" type="text" name="b_field" id="b_field" placeholder="b"
+                        <input class="form__input" type="number" step="any" name="b_field" id="b_field" placeholder="b"
                             required>
-                        <p class="p">x</p>
+                        <p class="input__paragram"> x </p>
                         <label for="c_field"></label>
-                        <input class="form__input input--prp" type="text" name="c_field" id="c_field" placeholder="c"
+                        <input class="form__input" type="number" step="any" name="c_field" id="c_field" placeholder="c"
                             required>
                     </div>
 
 
-                    <button type="submit">Calcular</button>
+                    <button class="form__submit submit--white text--weight-light" type="submit">Calcular</button>
 
                 </form>
+                <div class="main__solution">
 
+                    <p class="solution__p p--yellow">X<sub>1</sub> = </p>
+                    <p class="solution__p p--yellow">X<sub>2</sub> = </p>
+
+                </div>
+                <div class="main__graph">
+
+
+                </div>
             </div>
 
 
